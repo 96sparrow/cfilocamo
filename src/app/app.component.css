@@ -1,20 +1,16 @@
 .toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 25px;
-  display: flex;
+  float:inline-start;
+  height: fit-content;
+  width: 100%;
   background: linear-gradient(90deg, rgb(19 74 79) 41%, rgb(25 81 115) 100%); /*rgb(19 74 79) 41%, rgb(25 81 115) 100%)*/
   color: rgba(255, 255, 255, 0.897);
   font-weight: 600;
   flex-direction: row;
-  padding: 1%;
   font-family: Arial, Helvetica, sans-serif;
 }
 .verticalSpacing{
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0.5%;
+  margin-bottom: 0.2%;
 }
 .footerIcon{
   margin-right: 10px;
@@ -30,40 +26,56 @@
   align-items: center;
 }
 .socialMediaFooter{
-  margin-top: 10px;
   padding: 2px;
   align-items: center;
   align-content: center;
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
 }
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 170px;
-  display: flex;
-  background: linear-gradient(90deg, rgba(7,128,87,0.45) 41%, rgba(19,145,171,0.45) 100%); /*chiaro: linear-gradient(90deg, rgb(143 197 179) 41%, rgb(148 205 215) 100%)*/
+  font-size: small;
+  float: inline-end;
+  width: 100%;
+  /*linear-gradient(90deg, rgba(7,128,87,0.45) 41%, rgba(19,145,171,0.45) 100%); */
+  /*chiaro: linear-gradient(90deg, rgb(143 197 179) 41%, rgb(148 205 215) 100%)*/
   color: black; /*rgba(255, 255, 255, 0.897);*/
   font-weight: 600;
   flex-direction: column;
-  padding: 1%;
+  background: linear-gradient(90deg, rgba(7,128,87,0.45) 41%, rgba(19,145,171,0.45) 100%);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
+.footerContent{
   display: flex;
-  margin-top: 70px;
-  margin-bottom: 100px;
-  left: 0;
-  right: 0;
+  flex-direction: column;
+  padding: 1%;  
+  justify-content: center;
+}
+
+.footerRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footerColumn{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+
+.content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
-  background: white /*rgb(30, 30, 73);*//*rgb(48 48 54)*/ /* Also consider white background and note that somehow the toolbar and footer gradient are related to this color*/
+  /*rgb(30, 30, 73);*//*rgb(48 48 54)*/ /* Also consider white background and note that somehow the toolbar and footer gradient are related to this color*/
   /*background: linear-gradient(90deg, rgba(26,26,89,1) 41%, rgba(21,60,102,1) 56%, rgba(23,162,190,1) 100%);*/
   /*rgba(58, 106, 168), rgba(190, 16, 118)*/
 }
@@ -97,10 +109,20 @@
   z-index: 1;
 }
 
+.wholePage{
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+
 
 /*Togliere padding/margin da toolbar ed anche da footer. width 100%. height in percentuale in base all'importanza che devono avere
 * tipo toolbar 5%, content 80%, footer 15%
 * mettere display flex nella whole page e fare width 100% (forse anche height 100%)
 */
 
-
+html{
+  height: 100%;
+}

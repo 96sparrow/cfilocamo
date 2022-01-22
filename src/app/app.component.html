@@ -4,24 +4,29 @@
 <div class="wholePage">
     <div class="toolbar" role="banner">
         <span><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></span>
-        <div class="circular--portrait"> <img src="assets/propic.jpg"/> </div>
+        
     </div>
 
     <div class="content" role="main">
+        <div class="circular--portrait"> <img src="assets/propic.jpg"/> </div>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <router-outlet></router-outlet>
     </div>
 
     <div class="footer" role="banner">
-        <span>Claudio Filocamo</span>
-        <span><i>Software Engineer</i></span>
-        <span class="verticalSpacing"></span>
-        <div class="in-line-icon-text"><mat-icon aria-hidden="false" aria-label="Example home icon" class="footerIcon">phone_iphone</mat-icon><span>+39 339 6700556</span></div>
-        <div class="in-line-icon-text"><mat-icon aria-hidden="false" aria-label="Example home icon" class="footerIcon">email</mat-icon><span>claudio.filocamo@gmail.com</span></div>
-        <div class="in-line-icon-text"><mat-icon aria-hidden="false" aria-label="Example home icon" class="footerIcon">location_on</mat-icon><span>Via Bellinzona 64, 98121 Messina</span></div>
-        <div class="socialMediaFooter">
-            <div class="in-line-icon-text"><a  href="https://it-it.facebook.com/claudio.filocamo"><img src="assets/svg/facebook.svg" class="footerImg"></a></div>
-            <div class="in-line-icon-text"><a  href="https://www.instagram.com/clafilocamo/?hl=it"><img src="assets/svg/instagram.svg" class="footerImg"></a></div>
-            <div class="in-line-icon-text"><a  href="https://it.linkedin.com/in/claudiofilocamo"><img src="assets/svg/linkedin3.svg" class="footerImg"></a></div>
-        </div> 
+        <div class="footerContent">
+            <div class="footerColumn">
+                <div class="in-line-icon-text"><mat-icon aria-hidden="false" aria-label="Example home icon" class="footerIcon">phone_iphone</mat-icon><span>+39 339 6700556</span></div>
+                <div class="in-line-icon-text"><mat-icon aria-hidden="false" aria-label="Example home icon" class="footerIcon">email</mat-icon><span>claudio.filocamo@gmail.com</span></div>
+                <div class="in-line-icon-text"><mat-icon aria-hidden="false" aria-label="Example home icon" class="footerIcon">location_on</mat-icon><span>Via Bellinzona 64, 98121 Messina</span></div>
+            </div> 
+            <div class="socialMediaFooter">
+                <div class="in-line-icon-text"><a  href="https://it-it.facebook.com/claudio.filocamo"><img src="assets/svg/facebook.svg" class="footerImg"></a></div>
+                <div class="in-line-icon-text"><a  href="https://www.instagram.com/clafilocamo/?hl=it"><img src="assets/svg/instagram.svg" class="footerImg"></a></div>
+                <div class="in-line-icon-text"><a  href="https://it.linkedin.com/in/claudiofilocamo"><img src="assets/svg/linkedin3.svg" class="footerImg"></a></div>
+            </div> 
+        </div>
     </div>
 </div>
